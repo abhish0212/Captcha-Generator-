@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capcha Generator </title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        div{
+            background-color: azure;
+        }
+    </style>
+</head>
+<script type="text/javascript" src="Captcha.js"></script>
+<body onload="captchaGenerator()">
+    <center>
+        
+        <h1 > Captcha Generator </h1>
+        <div style="width: 30%; height: 80px;  box-sizing: border-box; border: 0.5px solid rgb(109, 182, 241);" >
+        <strong>Captcha*</strong> :<input type="text" id="createCaptcha" disabled style="margin-top: 10px;">
+        <input type="button" id="refresh" value="Refresh" onclick="captchaGenerator()">
+
+        <br><br>
+        <input type="text" id="inputCaptcha"  placeholder="Enter Captcha ">
+        <br>
+        <br>
+        
+        <input type="button" id="checkButton" value="Check" onclick="alert(isValid())">
+    </div>
+    </center>
+
+    
+</body>
+</html>
